@@ -4,7 +4,7 @@ import { hot } from "react-hot-loader/root";
 function App() {
   return (
     <div className="App">
-      <Tabs />
+      {/* <Accordion /> */}
     </div>
   );
 }
