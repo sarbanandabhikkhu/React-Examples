@@ -1,5 +1,4 @@
-import { useState } from "react";
-import "./App.css";
+import React, { useState } from "react";
 
 function Tabs() {
   const [toggleState, setToggleState] = useState(1);
@@ -9,7 +8,7 @@ function Tabs() {
   };
 
   return (
-    <div className="container">
+    <div className="Tabs">
       <div className="bloc-tabs">
         <button
           className={toggleState === 1 ? "tabs active-tabs" : "tabs"}
