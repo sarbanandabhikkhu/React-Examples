@@ -1,0 +1,141 @@
+{
+  "short_name": "React Example",
+  "name": "React Example App",
+  "description": "Basic React Example Codes using React 17 & Webpack 5",
+  "icons": [
+    {
+      "src": "/assets/favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "./assets/logo72.png",
+      "type": "image/png",
+      "sizes": "72x72",
+      "purpose": "any"
+    },
+    {
+      "src": "./assets/logo96.png",
+      "type": "image/png",
+      "sizes": "96x96",
+      "purpose": "any"
+    },
+    {
+      "src": "./assets/logo128.png",
+      "type": "image/png",
+      "sizes": "128x128",
+      "purpose": "any"
+    },
+    {
+      "src": "./assets/logo192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any"
+    },
+    {
+      "src": "./assets/logo384.png",
+      "type": "image/png",
+      "sizes": "384x384",
+      "purpose": "any"
+    },
+    {
+      "src": "./assets/logo512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any"
+    },
+    {
+      "src": "./assets/icon48.png",
+      "type": "image/png",
+      "sizes": "48x48",
+      "purpose": "maskable"
+    },
+    {
+      "src": "./assets/icon72.png",
+      "type": "image/png",
+      "sizes": "72x72",
+      "purpose": "maskable"
+    },
+    {
+      "src": "./assets/icon128.png",
+      "type": "image/png",
+      "sizes": "128x128",
+      "purpose": "maskable"
+    },
+    {
+      "src": "./assets/icon192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "maskable"
+    },
+    {
+      "src": "./assets/icon384.png",
+      "type": "image/png",
+      "sizes": "384x384",
+      "purpose": "maskable"
+    },
+    {
+      "src": "./assets/icon512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "maskable"
+    }
+  ],
+  "id": "./",
+  "scope": "./",
+  "start_url": "./",
+  "theme_color": "#61dafb",
+  "background_color": "#282c34",
+  "display_override": [],
+  "display": "standalone",
+  "shortcuts": [
+    {
+      "name": "Home",
+      "short_name": "Home",
+      "description": "Go to Home page",
+      "url": "/",
+      "icons": [
+        {
+          "src": "./assets/logo192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "About",
+      "short_name": "About",
+      "description": "Go to About page",
+      "url": "/about",
+      "icons": [
+        {
+          "src": "./assets/logo192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Services",
+      "short_name": "Services",
+      "description": "Go to Services page",
+      "url": "/services",
+      "icons": [
+        {
+          "src": "./assets/logo192.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "./assets/mobile.png",
+      "type": "image/png",
+      "sizes": "365x720"
+    },
+    {
+      "src": "./assets/tablet.png",
+      "type": "image/png",
+      "sizes": "540x720"
+    }
+  ]
+}
