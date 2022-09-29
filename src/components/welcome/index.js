@@ -1,11 +1,12 @@
 import React from "react";
-import logo from "../../logo.svg";
 import Socials from "./Socials";
+import logo from "../../logo.svg";
 
 const Welcome = (props) => {
   const { label, value } = props;
   return (
     <div className="Welcome">
+      {/* <img className="Logo" src={logo} alt={label} /> */}
       <img className="Logo" src={logo} alt={label} />
       <div className="Details">
         <h1 className="Label">{label}</h1>
