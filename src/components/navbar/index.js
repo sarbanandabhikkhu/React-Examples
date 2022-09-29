@@ -1,14 +1,8 @@
 import React, { useState, useEffect } from "react";
-
 import Menu from "../../icons/menu-bar.svg";
-import File from "../../icons/file.svg";
-import Search from "../../icons/search.svg";
-import Book from "../../icons/book.svg";
-import Apps from "../../icons/apps.svg";
-import User from "../../icons/user.svg";
-import Settings from "../../icons/settings.svg";
+import Nav from "./Nav";
 
-export default function Navbar() {
+function Navbar() {
   const [toggleMenu, setToggleMenu] = useState(false);
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
@@ -29,22 +23,13 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className="NavBar">
-      <img onClick={toggleNav} className="MenuBtn" src={Menu} alt="Menu" />
-      {(toggleMenu || screenWidth > 500) && (
-        <div className="NavContainer">
-          <div className="Top">
-            <img className="NavBtn" src={File} alt="Explore" />
-            <img className="NavBtn" src={Search} alt="Search" />
-            <img className="NavBtn" src={Book} alt="Dictionary" />
-            <img className="NavBtn" src={Apps} alt="Apps" />
-          </div>
-          <div className="Bottom">
-            <img className="NavBtn" src={Settings} alt="Settings" />
-            <img className="NavBtn" src={User} alt="User" />
-          </div>
-        </div>
-      )}
-    </nav>
+    <div className="NavBar">
+      <div className="MenuBtn">
+        <img onClick={toggleNav} src={Menu} alt="Menu" />
+      </div>
+      {(toggleMenu || screenWidth > 500) && <Nav />}
+    </div>
   );
 }
+
+export default Navbar;

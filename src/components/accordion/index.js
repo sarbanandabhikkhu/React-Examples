@@ -19,16 +19,15 @@ function Accordion() {
   console.log(toggle);
 
   return (
-    <div className="accordion">
-      <button onClick={toggleState} className="accordion-visible">
-        <span>Lorem ipsum dolor sit amet.</span>
+    <div className="Accordion">
+      <button onClick={toggleState} className="AccordionBtn">
         <img className={toggle && "active"} src={Chevron} />
+        <span>Lorem ipsum</span>
       </button>
-
       <div
-        className={toggle ? "accordion-toggle animated" : "accordion-toggle"}
-        style={{ height: toggle ? `${heightEl}` : "0px" }}
         ref={refHeight}
+        className={toggle ? "AccordionToggle animated" : "AccordionToggle"}
+        style={{ height: toggle ? `${heightEl}` : "0px" }}
       >
         <p aria-hidden={toggle ? "true" : "false"}>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore,
